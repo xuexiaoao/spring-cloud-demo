@@ -5,6 +5,8 @@ eureka:
     register-with-eureka: false
   server:
    enbale-self-preservation: false
+  instance:
+      prefer-ip-address: true
 spring:
   application:
     name: eureka
