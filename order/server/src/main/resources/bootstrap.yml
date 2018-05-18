@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: order
+  rabbitmq:
+    host: 
+    port:
+    username:
+    password:
+  cloud:
+   config:
+     discovery:
+       enabled: true
+       service-id: CONFIG
+     profile: test
