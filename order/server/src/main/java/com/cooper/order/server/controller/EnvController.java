@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 @RequestMapping("/env")
-//@RefreshScope
+@RefreshScope
 public class EnvController {
 	@Value("${env}")
 	private String env;
