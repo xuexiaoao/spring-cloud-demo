@@ -11,7 +11,7 @@ spring:
     host:
     port:
     username:
-    password:
+    password: 
   cloud:
     config:
       server:

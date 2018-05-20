@@ -32,9 +32,9 @@ public class ProductServiceImpl implements ProductService {
 	@Autowired
 	private ProductInfoRepository productInfoRepository;
 
-	/*@Autowired
+	@Autowired
 	private AmqpTemplate amqpTemplate;
-*/
+
 	@Override
 	public List<ProductInfo> findUpAll() {
 		return productInfoRepository.findByProductStatus(ProductStatusEnum.UP.getCode());
@@ -61,7 +61,7 @@ public class ProductServiceImpl implements ProductService {
 			BeanUtils.copyProperties(e, output);
 			return output;
 		}).collect(Collectors.toList());
-		//amqpTemplate.convertAndSend("productInfo", JsonUtil.toJson(productInfoOutputList));
+		amqpTemplate.convertAndSend("productInfo", JsonUtil.toJson(productInfoOutputList));
 
 	}
 

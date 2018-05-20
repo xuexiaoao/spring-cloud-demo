@@ -1,14 +1,11 @@
 package com.cooper.order.server.controller;
 
-import com.cooper.order.server.dataobject.ProductInfo;
 import com.cooper.product.client.ProductClient;
 import com.cooper.product.common.ProductInfoOutput;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
 import java.util.List;
