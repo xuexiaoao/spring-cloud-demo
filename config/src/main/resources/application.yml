@@ -18,7 +18,7 @@ spring:
         git:
           uri: https://gitee.com/xuexiaoao/config-repo.git
           username:
-          password:
+          password: 
           basedir: C:\workspace\basedir
 management:
   endpoints:
